@@ -1,0 +1,244 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    /* background-color: #f0f0f0; */
+    min-height: 100vh;
+    /* background: url(/media/fondo.jpg); */
+}
+
+.header-custom{
+    background-color: #087a34;
+    padding: 0;
+}
+
+.item-custom{
+    list-style: none;
+}
+
+.vinculo{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.vinculo:hover{
+    color: orange;
+}
+
+/* HEADER */
+
+header{
+    height: 15vh;
+}
+main{
+    min-height: 75vh;
+    padding: 1rem;
+}
+footer{
+    background-color: #202124;
+    color: white;
+    height: 10vh;
+}
+
+.pre-navbar{
+    height: 5vh;
+    width: 100%;
+    background-color: #202124;
+    color: white;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 !important;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.navbar .logo .vinculo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    gap: 2rem;
+    display: none;
+    margin: 0;
+}
+
+.logo img{
+    max-height: 8vh;
+    border-radius: 150px;
+    margin-left: 1vh;
+}
+
+.navbar .toggle-btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+    margin: 1vh 2vh;
+}
+
+.action-btn{
+    display: none;
+}
+
+.contacto-btn{
+    background-color: orangered;
+    color:#f0f0f0;
+    padding: .3rem .5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+.contacto-btn:hover{
+    scale:1.2;
+    color: white;
+}
+
+.action-btn:hover{
+    scale: 1.2;
+    color: white;
+}
+
+.action-btn:active{
+    scale: 0.95;
+}
+
+/* Dropdown */
+.dropdownMenu{
+    position: absolute;
+    right: 2rem;
+    top: 15vh;
+    height: 0;
+    background: grey;
+    backdrop-filter:blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: block;
+
+    left: 2rem;
+    width: unset;
+}
+
+.dropdownMenu.open{
+    height: 250px !important;
+}
+
+.dropdownMenu .item-custom{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownMenu .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.maps-container{
+    /* height: 50px;
+    width: 50px; */
+    background-color:olive;
+    margin: 1rem;
+}
+
+.main-content-custom{
+    background-color: #dfe0e1;
+    border-radius: 20px;
+    padding-top: 1rem;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto ;
+}
+
+.img-carousel-custom{
+    height: 50vh;
+}
+.carousel{
+    height: 50vh !important;
+}
+/* Puntos de corte */
+/* Hasta 400px - Dispositivos extra chicos */
+@media only screen and (max-width:400px){
+
+}
+/* Desde 400px - Dispositivos chicos */
+@media only screen and (min-width:400px){
+
+}
+/* Desde 650px - Dispositivos chicos */
+@media only screen and (min-width:650px){
+    
+
+    .dropdownMenu{
+        width: 300px;
+        left: unset;
+    }
+
+    
+}
+/* Desde 850px - Dispositivos medianos */
+@media only screen and (min-width:850px){
+    
+    .navbar .links{
+        display: flex !important;
+    }
+    .navbar .action-btn{
+        /* display: none; */
+        display: block !important;
+    }
+
+    .navbar .toggle-btn{
+        /* display: block; */
+        display: none;
+    }
+
+    .dropdownMenu{
+        /* display: block; */
+        display: none;
+    }
+
+}
+/* Desde 1000px - Dispositivos grandes */
+@media only screen and (min-width:1000px){
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+}
+/* Desde 1300px - Dispositivos extra grandes */
+@media only screen and (min-width:1300px){
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+}
