@@ -46,6 +46,7 @@ footer{
     background-color: #202124;
     color: white;
     height: 10vh;
+    padding: 1rem;
 }
 
 .pre-navbar{
@@ -146,6 +147,7 @@ footer{
 
 .dropdownMenu.open{
     height: 250px !important;
+    z-index: 9;
 }
 
 .dropdownMenu .item-custom{
@@ -183,10 +185,35 @@ footer{
 }
 
 .img-carousel-custom{
-    height: 50vh;
+    height: 25vh;
 }
 .carousel{
-    height: 50vh !important;
+    height: 25vh !important;
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li a{
+    color: grey;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.footer-texto{
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
 }
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
