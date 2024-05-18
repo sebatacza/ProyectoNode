@@ -215,6 +215,16 @@ footer{
     line-height: 24px;
     color: #737373;
 }
+
+
+.lista-errores{
+    color: #d50000;
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
 @media only screen and (max-width:400px){

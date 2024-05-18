@@ -44,7 +44,60 @@
             </div>
         </header>
         <main>
-            <h1>Hola soy Contacto</h1>
+            <div class="container main-content-custom">
+                <h1>Hacete Socio!</h1>
+                <h3>Completa el formulario para sumarte a los descuentos y promociones que tenemos para vos.</h3>
+                <form id="socioNuevoForm">
+                    <div>
+                      <label for="nombres">Ingrese nombres</label>
+                      <br>
+                      <input type="text" id="inputNombres" name="nombres" />
+                    </div>
+                    <div>
+                      <label for="apellidos">Ingrese apellidos</label>
+                      <br>
+                      <input type="text" id="inputApellidos" name="apellidos" />
+                    </div>
+                    <div>
+                      <label for="correo">Correo:</label>
+                      <br>
+                      <input type="email" id="inputCorreo" name="correo" />
+                    </div>
+                    <div>
+                      <label for="contraseña">Contraseña:</label>
+                      <br>
+                      <input type="password" id="inputContraseña" name="contraseña" />
+                    </div>
+                    <div>
+                      <label for="contraseñaRep">Repita contraseña:</label>
+                      <br>
+                      <input type="password" id="inputContraseñaRep" name="contraseñaRep" />
+                    </div>
+                    <div>
+                      <label for="inputPlan">Seleccione el plan en el que está interesado.</label>
+                      <br>
+                      <select id="inputPlan" name="tipoPlan" aria-placeholder="--Seleccione" >
+                        <option value="0">-- Seleccione --</option>
+                        <option value="1">Basico</option>
+                        <option value="2">GOLD</option>
+                        <option value="3">BLACK</option>
+                      </select>
+                    </div>
+                    <div>
+                      <input type="file" id="inputImagen" name="imagen">
+                    </div>
+                    <div>
+                      <input type="checkbox" id="chkTerminos" name="terminos"> Acepto términos y condiciones
+                    </div>
+                    <div>
+                      <input type="submit" value="Registrarse" />
+                    </div>
+                </form>
+                <div class="mensajeErrorForm">
+                  <ul id="listaErrores" class="lista-errores">
+                  </ul>
+                </div>
+            </div>
         </main>
 
         <footer>
