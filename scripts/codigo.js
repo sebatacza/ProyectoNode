@@ -70,22 +70,22 @@ nuevoSocioForm.addEventListener("submit", function (event) {
 
   //Nombres
   if (!nombres.value.trim()) {
-    mensaje.push("Nombre es requerido.");
+    mensaje.push("Complete nombre.");
   }
 
   //Apellidos
   if (!apellidos.value.trim()) {
-    mensaje.push("Apellido es requerido.");
+    mensaje.push("Complete apellido.");
   }
 
   //Correo
   if (!correo.value.trim() || !validarCorreo(correo.value)) {
-    mensaje.push("Correo invalido.");
+    mensaje.push("Correo no válido.");
   }
 
   //Contraseña
   if (!contraseña.value.trim() || !validarContraseña(contraseña.value)) {
-    mensaje.push("Contraseña debe ser al menos de 8 caracteres, contener una mayuscula, una misnucula, un digito y un caracter especial.");
+    mensaje.push("Contraseña debe ser de al menos de 8 carácteres, contener una mayúscula, una minúscula, un númro y un caracter especial.");
   }
 
   if(!contraseñaRep.value.trim()){
@@ -98,7 +98,7 @@ nuevoSocioForm.addEventListener("submit", function (event) {
 
   //Terminos
   if(!terminos.checked){
-    mensaje.push("Acepta los términos y condiciones.");
+    mensaje.push("Por favor acepte los términos y condiciones.");
   }
 
   //archivo
@@ -109,11 +109,11 @@ nuevoSocioForm.addEventListener("submit", function (event) {
   if(imagen.value != ""){
     //console.log('HAY')
     if(!validarTipoArchivo(imagen.value)){
-      mensaje.push("Ingrese png, jpg.");
+      mensaje.push("Tipo de archivo permitido: png, jpg.");
     }
   }else{
     //console.log('NO HAY')
-    mensaje.push("Por favor suba una imagen.");
+    mensaje.push("Por favor suba una imagen de su documento.");
   }
  
 

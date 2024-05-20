@@ -44,69 +44,87 @@
             </div>
         </header>
         <main>
-            <div class="container main-content-custom">
+            <div class="container main-content-custom display-grid">
                 <h1>Hacete Socio!</h1>
-                <h3>Completa el formulario para sumarte a los descuentos y promociones que tenemos para vos.</h3>
-                <form id="socioNuevoForm">
-                    <div>
-                      <label for="nombres">Ingrese nombres</label>
-                      <br>
-                      <input type="text" id="inputNombres" name="nombres" />
+                <div class="contenido-form">
+                  <div class="row text-center">
+                    <div class="col-12"><h3 class="titulo-form">Ingrese los siguientes datos para acceder a los beneficios.</h3></div>
+                  </div>
+                  <div class="container-form">
+                    
+                    <form id="socioNuevoForm" class="form-custom">
+                        <div>
+                          <label for="nombres">Nombres*</label>
+                          <br>
+                          <input type="text" id="inputNombres" name="nombres" />
+                        </div>
+                        <div>
+                          <label for="apellidos">Apellidos*</label>
+                          <br>
+                          <input type="text" id="inputApellidos" name="apellidos" />
+                        </div>
+                        <div>
+                          <label for="correo">Correo*</label>
+                          <br>
+                          <input type="email" id="inputCorreo" name="correo" />
+                        </div>
+                        <div>
+                          <label for="contraseña">Contraseña*</label>
+                          <br>
+                          <input type="password" id="inputContraseña" name="contraseña" />
+                        </div>
+                        <div>
+                          <label for="contraseñaRep">Repita contraseña*</label>
+                          <br>
+                          <input type="password" id="inputContraseñaRep" name="contraseñaRep" />
+                        </div>
+                        <div>
+                          <label for="inputPlan">Seleccione tipo de plan*</label>
+                          <br>
+                          <select id="inputPlan" name="tipoPlan" aria-placeholder="--Seleccione" >
+                            <option value="0">-- Seleccione --</option>
+                            <option value="1">BÁSICO</option>
+                            <option value="2">GOLD</option>
+                            <option value="3">BLACK</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="inputPlan">Foto de su documento (cara frontal)*</label>
+                          <br>
+                          <input type="file" class="input-img" id="inputImagen" name="imagen">
+                        </div>
+                        <div>
+                          <input type="checkbox" id="chkTerminos" name="terminos"> Acepto términos y condiciones
+                        </div>
+                        <div class="text-center">
+                          <input type="submit" class="btn-submit" value="REGISTRARSE" />
+                        </div>
+                    </form>
+                    <div class="mensajeErrorForm">
+                      <ul id="listaErrores" class="lista-errores">
+                      </ul>
                     </div>
-                    <div>
-                      <label for="apellidos">Ingrese apellidos</label>
-                      <br>
-                      <input type="text" id="inputApellidos" name="apellidos" />
-                    </div>
-                    <div>
-                      <label for="correo">Correo:</label>
-                      <br>
-                      <input type="email" id="inputCorreo" name="correo" />
-                    </div>
-                    <div>
-                      <label for="contraseña">Contraseña:</label>
-                      <br>
-                      <input type="password" id="inputContraseña" name="contraseña" />
-                    </div>
-                    <div>
-                      <label for="contraseñaRep">Repita contraseña:</label>
-                      <br>
-                      <input type="password" id="inputContraseñaRep" name="contraseñaRep" />
-                    </div>
-                    <div>
-                      <label for="inputPlan">Seleccione el plan en el que está interesado.</label>
-                      <br>
-                      <select id="inputPlan" name="tipoPlan" aria-placeholder="--Seleccione" >
-                        <option value="0">-- Seleccione --</option>
-                        <option value="1">Basico</option>
-                        <option value="2">GOLD</option>
-                        <option value="3">BLACK</option>
-                      </select>
-                    </div>
-                    <div>
-                      <input type="file" id="inputImagen" name="imagen">
-                    </div>
-                    <div>
-                      <input type="checkbox" id="chkTerminos" name="terminos"> Acepto términos y condiciones
-                    </div>
-                    <div>
-                      <input type="submit" value="Registrarse" />
-                    </div>
-                </form>
-                <div class="mensajeErrorForm">
-                  <ul id="listaErrores" class="lista-errores">
-                  </ul>
+                  </div>
                 </div>
+                
             </div>
         </main>
 
         <footer>
-            <div class="container">
-                <div class="row">
-                  <div class="col-md-4">Footer </div>
-                  <div class="col-md-4 offset-md-4"> 2024 </div>
-                </div>
+          <div class="container">
+            <div class="row">
+              <div class="col footer-texto col-6 align-content-center">
+                <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by Grupo7.</p>
               </div>
+              <div class="col col-6">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                  <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </footer>
         <!-- bootstrap (parte 2 js) -->
         <script src="/scripts/bootstrap/js/bootstrap.bundle.min.js" ></script>

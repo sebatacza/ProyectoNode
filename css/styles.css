@@ -225,6 +225,76 @@ footer{
     border-radius: 10px;
 }
 
+.display-grid{
+    display: grid;
+}
+
+.contenido-form{
+    justify-self: center;
+    width: fit-content;
+    background-color: #bcc6cf;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.mensajeErrorForm{
+    border-radius: 20px;
+    background-color: #bcc6cf;
+    padding: .5rem;
+    margin: .5rem;
+}
+.form-custom{
+    width: fit-content;
+    /* background-color: indianred; */
+    max-width: 80vw;
+    justify-self: center;
+}
+
+.titulo-form{
+    color: #393939;
+    margin: .5rem 0;
+}
+.form-custom > div > label{
+    font-weight: bold;
+    color: #393939;
+}
+
+.form-custom > div{
+    padding: 5px;
+}
+
+.form-custom > div > input[type="text"],
+.form-custom > div > input[type="email"],
+.form-custom > div > input[type="password"]
+{
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px;
+}
+
+.btn-submit
+{
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #39a0d0;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    border: none;
+    margin: 1rem 0;
+}
+.btn-submit:hover{
+    opacity: .8;
+}
+
+.container-form{
+    display: grid;
+}
+
+
+.input-img{
+    max-width: 70vw !important;
+}
+
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
 @media only screen and (max-width:400px){
