@@ -234,6 +234,7 @@ footer{
     width: fit-content;
     background-color: #bcc6cf;
     padding: 1rem;
+    margin: 1rem;
     border-radius: 20px;
 }
 .mensajeErrorForm{
