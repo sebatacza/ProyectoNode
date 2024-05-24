@@ -324,6 +324,26 @@ footer{
     color: #d70000 !important;
 }
 
+.pelicula{
+    margin:5px;
+    width: min-content;
+    text-align: center;
+    transition: .5s;
+}
+.pelicula:hover{
+    scale: 1.1;
+}
+.pelicula img{
+    max-width: 180px;
+    height: auto;
+}
+/* .pelicula img{
+    transition: .5s;
+}
+.pelicula img:hover{
+    scale: 1.1;
+} */
+
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
 @media only screen and (max-width:400px){
