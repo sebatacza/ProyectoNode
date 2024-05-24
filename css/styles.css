@@ -250,7 +250,7 @@ footer{
     margin: .5rem;
 }
 .form-custom{
-    width: fit-content;
+    width: 900px;
     /* background-color: indianred; */
     max-width: 80vw;
     justify-self: center;
@@ -320,6 +320,9 @@ footer{
     100% { transform:translateY(0); }
 }
 
+.lblErrorValidacion{
+    color: #d70000 !important;
+}
 
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */

@@ -60,26 +60,36 @@
                           <label for="nombres">Nombres*</label>
                           <br>
                           <input type="text" id="inputNombres" name="nombres" />
+                          <br>
+                          <label id="lblNombreError" class="lblErrorValidacion"></label>
                         </div>
                         <div>
                           <label for="apellidos">Apellidos*</label>
                           <br>
                           <input type="text" id="inputApellidos" name="apellidos" />
+                          <br>
+                          <label id="lblApellidoError"class="lblErrorValidacion"></label>
                         </div>
                         <div>
                           <label for="correo">Correo*</label>
                           <br>
                           <input type="email" id="inputCorreo" name="correo" />
+                          <br>
+                          <label id="lblEmailError" class="lblErrorValidacion"></label>
                         </div>
-                        <div>
+                        <div class="col-12">
                           <label for="contraseña">Contraseña*</label>
                           <br>
                           <input type="password" id="inputContraseña" name="contraseña" />
+                          <br>
+                          <label id="lblPassError" class="lblErrorValidacion"></label>
                         </div>
                         <div>
                           <label for="contraseñaRep">Repita contraseña*</label>
                           <br>
                           <input type="password" id="inputContraseñaRep" name="contraseñaRep" />
+                          <br>
+                          <label id="lblrptPassError" class="lblErrorValidacion"></label>
                         </div>
                         <div>
                           <label for="inputPlan">Seleccione tipo de plan*</label>
@@ -90,14 +100,20 @@
                             <option value="2">GOLD</option>
                             <option value="3">BLACK</option>
                           </select>
+                          <br>
+                          <label id="lblPlanError" class="lblErrorValidacion"></label>
                         </div>
                         <div>
-                          <label for="inputPlan">Foto de su documento (cara frontal)*</label>
+                          <label for="inputimagen">Foto de su documento (cara frontal)*</label>
                           <br>
                           <input type="file" class="input-img" id="inputImagen" name="imagen">
+                          <br>
+                          <label id="lblIMGError" class="lblErrorValidacion"></label>
                         </div>
                         <div>
                           <input type="checkbox" id="chkTerminos" name="terminos"> Acepto términos y condiciones
+                          <br>
+                          <label id="lblCondicionesError"class="lblErrorValidacion"></label>
                         </div>
                         <div class="text-center">
                           <input type="submit" class="btn-submit" value="REGISTRARSE" />
