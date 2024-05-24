@@ -250,7 +250,7 @@ footer{
     margin: .5rem;
 }
 .form-custom{
-    width: 900px;
+    /* width: 900px; */
     /* background-color: indianred; */
     max-width: 80vw;
     justify-self: center;

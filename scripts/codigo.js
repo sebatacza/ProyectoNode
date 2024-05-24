@@ -119,6 +119,9 @@ nuevoSocioForm.addEventListener("submit", function (event) {
   //Contraseña
   if (!contraseña.value.trim() || !validarContraseña(contraseña.value)) {
     mensaje.push("Contraseña debe ser de al menos de 8 carácteres, contener una mayúscula, una minúscula, un númro y un caracter especial.");
+    //Damos mismo ancho que el input para evitar que deforme el form
+    var inputContraseña = document.getElementById('inputContraseña');
+    document.getElementById('lblPassError').style.width = inputContraseña.getBoundingClientRect().width +'px';
     document.getElementById('lblPassError').innerHTML = iconoError+'Contraseña debe ser de al menos de 8 carácteres, contener una mayúscula, una minúscula, un númro y un caracter especial.';
   }else{
     document.getElementById('lblPassError').innerHTML = '';
