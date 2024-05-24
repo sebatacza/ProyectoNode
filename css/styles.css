@@ -15,8 +15,9 @@ body{
 }
 
 .header-custom{
-    background-color: #087a34;
+    background-color: #000000;
     padding: 0;
+    border-bottom: 4px solid #b93434;
 }
 
 .item-custom{
@@ -41,6 +42,15 @@ header{
 main{
     min-height: 75vh;
     padding: 1rem;
+
+    /* background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
 }
 footer{
     background-color: #202124;
@@ -49,6 +59,9 @@ footer{
     padding: 1rem;
 }
 
+h1{
+    /* color: white !important; */
+}
 .pre-navbar{
     height: 5vh;
     width: 100%;
@@ -103,7 +116,7 @@ footer{
 }
 
 .contacto-btn{
-    background-color: orangered;
+    background-color: #ff4c0a;
     color:#f0f0f0;
     padding: .3rem .5rem;
     border: none;
@@ -172,11 +185,18 @@ footer{
 }
 
 .main-content-custom{
-    background-color: #dfe0e1;
     border-radius: 20px;
     padding-top: 1rem;
     width: 100% !important;
     max-width: 100% !important;
+    /* background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
 }
 
 .grid-container{
@@ -242,6 +262,7 @@ footer{
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
+    
 }
 .mensajeErrorForm{
     border-radius: 20px;
@@ -254,6 +275,16 @@ footer{
     /* background-color: indianred; */
     max-width: 80vw;
     justify-self: center;
+}
+.mapa-custom{
+    border: 3px solid #616161;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px black;
+}
+
+.map-titulo{
+    background-color: burlywood;
+    margin: 5px 5rem;
 }
 
 .titulo-form{
@@ -343,6 +374,13 @@ footer{
 .pelicula img:hover{
     scale: 1.1;
 } */
+
+.contenedor-peliculas{
+    
+    border-radius: 1rem;
+    margin: 1rem 0;
+    background-color: #c3c3c3;
+}
 
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
