@@ -53,43 +53,7 @@ class OtroProducto extends Productos{
     }
 }
 
-let productosTienda = [
-  {
-    id:1,
-    nombre:'Vaso Star Wars',
-    tipo:'vaso',
-    precio:2399,
-    stock: 23,
-  },
-  {
-    id:2,
-    nombre:'Pochoclera Barbie',
-    tipo:'pochoclera',
-    precio:1255,
-    stock: 12,
-  },
-  {
-    id:3,
-    nombre:'LLavero Spiderman',
-    tipo:'llavero',
-    precio:423,
-    stock: 41,
-  },
-  {
-    id:4,
-    nombre:'Pochoclera Garfield',
-    tipo:'pochoclera',
-    precio:1255,
-    stock: 13,
-  },
-  {
-    id:5,
-    nombre:'Remera Dune',
-    tipo:'prenda',
-    precio:10000,
-    stock: 5,
-  }
-]
+
 
 //Usadas en el TP
 class Personas{
@@ -251,3 +215,4 @@ function validarTipoArchivo(archivo){
       return false;
   }
 }
+
