@@ -380,6 +380,10 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
     background-color: #c3c3c3;
 }
 
+.iconos-banner{
+    display: block;
+}
+
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
 @media only screen and (max-width:400px){
@@ -404,7 +408,9 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
         left: unset;
     }
 
-    
+    .iconos-banner{
+        display: none;
+    }
 }
 /* Desde 850px - Dispositivos medianos */
 @media only screen and (min-width:850px){
