@@ -380,6 +380,12 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
     background-color: #c3c3c3;
 }
 
+.contenedor-peliculas-inicio{
+    
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
 .iconos-banner{
     display: block;
 }
@@ -387,6 +393,42 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
 .contenedor-tabla{
     margin: 2rem  1rem;
 }
+
+/* a */
+.col1, .col2, .col3, .col4, .col5, .col6, .col7 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.containertext-center{
+margin: 0;
+padding-top: 0;
+}
+.ch-select{
+    border-color: #b3b3b3;
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 12px;
+    background: #1d1c1c;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 0;
+    font-family: "GothamHTFUltra";
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top; 
+    width: 45%; 
+    margin-right: 1000px;
+}
+.span-custom{
+
+    max-height: 29px;
+    overflow: hidden;
+    display: inline-block;
+}
+/* a */
 
 /* Puntos de corte */
 /* Hasta 400px - Dispositivos extra chicos */
